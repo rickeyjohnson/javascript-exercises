@@ -2,12 +2,16 @@ function isLetter (symbol) {
     return symbol.toLowerCase() != symbol.toUpperCase()
 }
 
+function isNumber(n) {
+    return /^\d+$/.test(n);
+}
+
 function strToArr(str) {
     return str.toLowerCase()
               .replace(" ", "")
               .split('')
               .filter((letter) => {
-                return isLetter(letter)
+                return isLetter(letter) || isNumber(letter)
               })
 }
 
