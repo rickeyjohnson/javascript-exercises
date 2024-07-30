@@ -27,6 +27,7 @@ const factorial = function(num) {
 	for (let i = num; i > 0; i--) {
     result *= i
   }
+  return result
 };
 
 // Do not edit below this line
