@@ -9,7 +9,7 @@ const subtract = function(num1, num2) {
 const sum = function(array) {
 	return array.reduce((total, curr) => {
     return total + curr
-  })
+  }, 0)
 };
 
 const multiply = function(num1, num2) {
