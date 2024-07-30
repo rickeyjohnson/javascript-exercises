@@ -1,6 +1,15 @@
 const fibonacci = (num) => {
-    let result = 0
     let sequenceOfNums = [0, 1]
+
+    if (typeof num != 'number') {
+        num = parseInt(num)
+    }
+
+    if (num < 0) {
+        return "OOPS"
+    } else if (num < 1) {
+        return 0
+    } 
 
     for (let i = 2; i <= num; i++) {
         sequenceOfNums.push(sequenceOfNums[i - 2] + sequenceOfNums[i - 1])
